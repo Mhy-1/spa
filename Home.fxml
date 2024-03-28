@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #eaeaea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tazerdev.spa.HomeController">
+   <children>
+      <Pane fx:id="mainpanel" layoutX="6.0" layoutY="188.0" prefHeight="878.0" prefWidth="1908.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+         <children>
+            <Pane fx:id="Home" prefHeight="878.0" prefWidth="1908.0" visible="true">
+               <children>
+                  <HBox alignment="CENTER" layoutX="600.0" layoutY="363.0" prefHeight="117.0" prefWidth="709.0" spacing="120.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="48.0" prefWidth="117.0" spacing="10.0">
+                           <children>
+                              <ImageView fx:id="WebsiteShower" fitHeight="117.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@SPA/Icons/Icon%20metro-chrome.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1635a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Websites">
+                                 <font>
+                                    <Font name="Segoe UI Semibold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="CalculatorShower" fitHeight="134.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@SPA/Icons/Icon%20ionic-ios-calculator.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1635a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculators">
+                                 <font>
+                                    <Font name="Segoe UI Semibold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Text fx:id="Welcome" fill="#2145d3" layoutX="768.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Name">
+                     <font>
+                        <Font name="Segoe UI Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="Flexable" layoutX="156.0" layoutY="40.0" prefHeight="753.0" prefWidth="1605.0" visible="false" />
+            <Label fx:id="DateTime" alignment="CENTER" contentDisplay="CENTER" layoutX="794.0" layoutY="808.0" prefHeight="56.0" prefWidth="321.0" text="November 3, 2021 | 05:34:00 PM" textAlignment="CENTER" textFill="#2145d3">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Day" alignment="CENTER" contentDisplay="CENTER" layoutX="794.0" layoutY="785.0" prefHeight="56.0" prefWidth="321.0" text="Wednesday" textAlignment="CENTER" textFill="#2145d3">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="GoHome" fitHeight="40.0" fitWidth="48.0" layoutX="34.0" layoutY="820.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@SPA/Icons/Icon%20material-keyboard-backspace.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="42.0" prefWidth="48.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="power" fitHeight="48.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@SPA/Icons/Icon%20material-power-settings-new.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <ImageView fx:id="logo" fitHeight="134.0" fitWidth="218.0" layoutX="851.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SPA/Logo/Asset%206.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
